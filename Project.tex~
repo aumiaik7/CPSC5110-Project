@@ -138,7 +138,16 @@ are in the same column under the subject code and the corresponding rows indicat
 
 
 \Large \textbf{3. Solution Strategies:}
-\normalsize \textbf 
+\normalsize \textbf{a.Heuristic:}
+Solving the scheduling problem using Greedy Heuristic is simple and straight forward. The concept of greedy heuristic is 
+I have to choose local maximum rating at each iteration.Finally I will get total rating. The things I need to keep in 
+my mind are:  
+\begin{enumerate}
+\item The program should fulfill the conditions stated in Problem Statement
+\item There are some Metting Times that conflicts with each other. So if I choose a maximum rating in any iteration and
+its meeting time(s) conflicts with any other meeting time(s) then I will not consider the ratings under that/those 
+meeting time(s)
+\end{enumerate}  
 
 
 
