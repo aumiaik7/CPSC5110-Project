@@ -193,12 +193,28 @@ I used excel solver to solve the LP, unlike heuristic I had to introduce some ot
 \begin{enumerate}[align=left,style=nextline,leftmargin=1.5cm,labelsep=\parindent,font=\normalfont]
 \item[i.]  Each course cannot be taken more than once.
 \item[ii.] Not more than one class can be chosen from one meeting time.
-\item[iii.] There are some Meeting Times that conflicts with each other. Atmost one class can be taken from those conflicting time slots.  
+\item[iii.] There are some meeting times that conflicts with each other. Atmost one class can be taken from those conflicting time slots.  
 \item[iv.] MGT 490 and FIN 358 must be taken.
-\item[iv.] Total number of course between CIS 102T and CIS 102W is one.
-\item[v.] Total number of courses between FIN 325, FIN 352, FIN 356 and FIN 359 is two.
+\item[iv.] Number of course between CIS 102T and CIS 102W is one.
+\item[v.] Number of courses between FIN 325, FIN 352, FIN 356 and FIN 359 is two.
 \item[vi.] Total numer of course is five.
 \end{enumerate}  
+
+All the above mentioned constraints were added using excel solver. Here is an example how I added constraint in excel solver. Let us consider contraint (vi). There are four columns for FIN 325, FIN 352, FIN 356 and FIN 359. I must choose atmost two courses from these four. So summation of these four columns is equals to two and as I cannot take one coure more than once so summation of each column is less than or equal to zero. I added the other constraints similar way in excel solver. Meeting time contraints, Course conrtraints and resulting decision variables are shown in Figure 2,3 and 4.Objective function is sum of products of the elements of Table 1 and 2. After solving this problem in excel solver I get the optimal rating for this LP which is 19.5.         
+
+ \normalsize \textbf{c. Extensions:}
+In extentions part I will introduce new constraints to the LP part and observe what will happen to the optimal rating in extentions. The contraint is as follows:
+\begin{enumerate}[align=left,style=nextline,leftmargin=1.5cm,labelsep=\parindent,font=\normalfont]
+\item[i.]  Without lowering the maximum rating (19.5) too much Sarah wants to see whether she can attend classes only three days a week. 
+\end{enumerate}
+
+So I will have some new constraints as well as a new problem. The new problem is, I have to find in which days Sarah will take the classes as well as I will calculate the maximum rating as I calculated earlier. How I formulated and solved this extension is described bellow:\\
+I have a new colums of decision variables. Each row of that column represents each day of a week. If one or more class is taken on a particular day then the cell is 1 otherwise it's 0. So I added this column as a decision varible in excel solver. (One thing I want to mention here that I kept the contraints and decision variables of the previous LP as it was and added the new decision variables and constraints for this extention.)
+I added two constraints for this extension:\\
+-Number of classes taken in a specific day of a week is less than or equals to 5.\\
+- Total number of days in a week is 3.\\
+
+For example I stored number of classes in each day of a week in a colum. Each row of that column actullay represents the sum of classes of that specific day. If any class is taken in a specific day of a week then the corresponding row of figure abc  will become 1, so  
 
 
 
