@@ -34,7 +34,8 @@
 \usepackage{color} %include even if images aren’t in color
 
 \usepackage{float}
-\floatstyle{boxed} 
+%\floatstyle{boxed} 
+\usepackage[export]{adjustbox}
 \restylefloat{figure}
 
 
@@ -100,7 +101,8 @@ between these.
 Fixed Instruments and Markets (FIN 359)) she will take two courses.
 \end{enumerate}
 
-Sarah rated each section of the available courses based on content of the course, reputation of the instructor and timing of the course. Now it's my job to find an appropriate schedule for Sarah which will meet all the above mentioned conditions and also will give highest total rating. I will solve the problem using two strategies. First one is Greedy Heuristic and the second one is LP model. Using Greedy Heuristic I will find a solution which may not be optimal but good enough, using LP model I will find optimal solution and finally I will find maximum rating of three days a week schedule by extending the LP .\\
+Sarah rated each section of the available courses based on content of the course, reputation of the instructor and timing of the course. Now it's my job to find an appropriate schedule for Sarah which will meet all the above mentioned conditions and also will give highest total rating. I will solve the problem using two strategies. First one is Greedy Heuristic and the second one is LP model. Using Greedy Heuristic I will find a solution which may not be optimal but good enough, using LP model I will find optimal solution and finally I will find maximum rating of three days a week schedule by extending the LP .
+\newline
 \newline
 \Large \textbf{2. Input Data:}
 \normalsize The input data for the problem are rearranged as follows: 
@@ -129,9 +131,11 @@ Sarah rated each section of the available courses based on content of the course
 
 \end{table}
 
-Table 1 shows the rating of the sections of corresponding subjects and their Meeting times. Ratings of sections of a subject are in the same column under the subject code and the corresponding rows indicates the meeting times of the sections. For example MGT 490 has 6 sections and the first section has rating of 4.3 and its meeting time is M 6-8:45 p.m.\\
+Table 1 shows the rating of the sections of corresponding subjects and their Meeting times. Ratings of sections of a subject are in the same column under the subject code and the corresponding rows indicates the meeting times of the sections. For example MGT 490 has 6 sections and the first section has rating of 4.3 and its meeting time is M 6-8:45 p.m.
+\newline
 \newline
 \Large \textbf{3. Solution Strategies:}\\
+\newline
  \normalsize \textbf{a. Heuristic:}
 Solving the scheduling problem using Greedy Heuristic is simple and straight forward. The concept of greedy heuristic is 
 I have to choose local maximum rating at each iteration.Finally I will get total rating. The things I need to keep in 
@@ -146,22 +150,24 @@ meeting time(s) in the next iterations.
 I put the course codes, meeting times and the ratings in a text file and from octave function I read the data and stored course codes, meeting times and ratings in three matrices. From the matrix in which I stored ratings I calculated maximum rating of each column in every iteration. Maximum rating of a column indicates the maximum rating of that subject. After getting the maximum rating I made all indices of that row to zero because the corresponding time slot is taken, so other ratings in the same that are in the same row will not contribute in finding maximum ratings in following iterations. If the time slot conflicts with any other time slot(s) the ratings of the corresponding rows also made zero for same reason. Finally I got the maximum ratings of each subjects and choose the ratings of five subjects that met Sarah conditions and showed the output in readable format. The maximum rating using greedy heuristic is 18.8.
 The output from octave console is given bellow:
 
-\begin{figure}[h!]
+\begin{figure}[H]
   
   \centering
-    \includegraphics[width=0.8\textwidth]{heuristic}
+  \frame{\includegraphics[width=0.8\textwidth]{heuristic}}
+    
     \caption{Output of Greedy Heuristic}
 \end{figure}
 
-The Octave code for greedy heuristic is attached in appendix part.\\
+The Octave code for greedy heuristic is attached in appendix part.
 \newline
- \normalsize \textbf{a. LP:} 
+\newline
+ \normalsize \textbf{b. LP:} 
 Now I will use LP model to find an optimal solution. In my case it is a schedule that produces maximum rating. In other word I can say that I have to maximize.
 \begin{center}
  $\sum\limits_{ij} c_{ij}x_{ij}$ where i = 1...10 and j = 1...8
 \end{center}
 
-Here c is matrix of coefficients  and x is matrix of decision variables. In this case Table 1 represents c and Table 2 represents x \\ 
+Here c is matrix of coefficients  and x is matrix of decision variables. In this case Table 1 represents c and Table 2 represents x  
 
 \begin{table}[h]
 \begin{center}
@@ -186,45 +192,84 @@ Here c is matrix of coefficients  and x is matrix of decision variables. In this
 \caption{Decision Variables}
 \end{table}
 
-If any course is taken in $(i,j)^{th}$ position the that  $x_{ij}$ is 1 otherwise it's 0. So my task is to maximaze $\sum\limits_{ij} c_{ij}x_{ij}$ which is actually sum of product of Table 1 and Table 2.
+If any course is taken in $(i,j)^{th}$ position the that  $x_{ij}$ is 1 otherwise it's 0. So my task is to maximize $\sum\limits_{ij} c_{ij}x_{ij}$ which is actually sum of product of Table 1 and Table 2.
 
 I used excel solver to solve the LP, unlike heuristic I had to introduce some other constraints. All the constraints that must meet to solve the LP are given bellow:
 
 \begin{enumerate}[align=left,style=nextline,leftmargin=1.5cm,labelsep=\parindent,font=\normalfont]
 \item[i.]  Each course cannot be taken more than once.
 \item[ii.] Not more than one class can be chosen from one meeting time.
-\item[iii.] There are some meeting times that conflicts with each other. Atmost one class can be taken from those conflicting time slots.  
+\item[iii.] There are some meeting times that conflicts with each other. At most one class can be taken from those conflicting time slots.  
 \item[iv.] MGT 490 and FIN 358 must be taken.
 \item[iv.] Number of course between CIS 102T and CIS 102W is one.
 \item[v.] Number of courses between FIN 325, FIN 352, FIN 356 and FIN 359 is two.
-\item[vi.] Total numer of course is five.
+\item[vi.] Total number of course is five.
 \end{enumerate}  
 
-All the above mentioned constraints were added using excel solver. Here is an example how I added constraint in excel solver. Let us consider contraint (vi). There are four columns for FIN 325, FIN 352, FIN 356 and FIN 359. I must choose atmost two courses from these four. So summation of these four columns is equals to two and as I cannot take one coure more than once so summation of each column is less than or equal to zero. I added the other constraints similar way in excel solver. Meeting time contraints, Course conrtraints and resulting decision variables are shown in Figure 2,3 and 4.Objective function is sum of products of the elements of Table 1 and 2. After solving this problem in excel solver I get the optimal rating for this LP which is 19.5.         
-\\\\\\\\\\\
+All the above mentioned constraints were added using excel solver. Here is an example how I added constraint in excel solver. Let us consider constraint (vi). There are four columns for FIN 325, FIN 352, FIN 356 and FIN 359. I must choose at most two courses from these four. So summation of these four columns is equals to two and as I cannot take one course more than once so summation of each column is less than or equal to zero. I added the other constraints in similar ways in excel solver.  The resulting decision variables with coefficients and optimal objective function is shown in Figure 2. Meeting time constraints, Course constraints are shown in Figure 3 .Objective function is sum of products of the elements of Table 1 and 2. After solving this problem in excel solver I get the optimal rating for this LP which is 19.5.         
+\begin{figure}[H]
+  
+  \centering
+     \frame{\includegraphics[width=1.0\textwidth, height=0.3\textheight]{decision}}
+    \caption{Resulting Decision variables, Coefficients and Optimal Objective function}
+\end{figure}
+
+\begin{figure}[H]
+  
+  \centering
+    \frame{ \includegraphics[width=0.8\textwidth, height=0.5\textheight]{constraints}}
+    \caption{Meeting time constraints and Course constraints}
+\end{figure}
+
+Using excel solver I also found the shadow price (dual values) of this LP. I copied the shadow prices beside the constraints. It is stated bellow:
+
+\begin{figure}[H]
+  
+  \centering
+    \frame{ \includegraphics[width=0.6\textwidth, height=0.34\textheight]{shadow}}
+    \caption{Shadow prices (Dual values) of the LP}
+\end{figure}
+We see that for the meeting time constraints there are some positive shadow prices. But I couldn't find anything meaningful out of these shadow prices as the right hand side of these constraints cannot be increased because Sarah cannot take more than one class in a specific meeting time. It is not possible. By looking at the shadow prices of course constraints we can see that constraints for MGT 490, FIN 358, FIN 352 and FIN 359 have positive values. Again anything meaningful cannot be interpreted from these dual values as the right hand side of these constraints cannot be increased because Sarah will not take same course more than once.\\
+Now if wee look at the dual values of CIS and FIN elective course we can see that they are 3.7 and 3.1 respectively so if I increase the rhs of CIS by 1 the resulting rating will be increased by 3.7 and if I increase the rhs of FIN the resulting rating will be increased by 3.1 but in that case I will need to increase the total number of courses. But the dual value for total number of courses is 0. In my opinion the dual values cannot be interpreted in any meaningful way.\\  
+
  \normalsize \textbf{c. Extensions:}
-In extentions part I will introduce new constraints to the LP part and observe what will happen to the optimal rating in extentions. The contraint is as follows:
+In extensions part I will introduce new constraints to the LP part and observe what will happen to the optimal rating in extensions. The constraint is as follows:
 \begin{enumerate}[align=left,style=nextline,leftmargin=1.5cm,labelsep=\parindent,font=\normalfont]
 \item[i.]  Without lowering the maximum rating (19.5) too much Sarah wants to see whether she can attend classes only three days a week. 
 \end{enumerate}
 
-So I will have some new constraints as well as a new problem. The new problem is, I have to find in which days Sarah will take the classes as well as I will calculate the maximum rating as I calculated earlier. How I formulated and solved this extension is described bellow:\\
-I have a new colums of decision variables. Each row of that column represents each day of a week. If one or more class is taken on a particular day then the cell is 1 otherwise it's 0. So I added this column as a decision varible in excel solver. (One thing I want to mention here that I kept the contraints and decision variables of the previous LP as it was and added the new decision variables and constraints for this extention.)
-I added two constraints for this extension:\\
--Number of classes taken in a specific day of a week is less than or equals to 5.\\
+So I will have some new constraints as well as a new problem. The new problem is, I have to find in which days Sarah will take the classes as well as I will calculate the maximum rating as I calculated earlier. How I formulated and solved this extension is described bellow:\newline
+I have a new row of decision variables. Each cell of that row represents each day of a week. If one or more class is taken on a particular day then the cell is 1 otherwise it's 0. So I added this row as a decision variable in excel solver. (One thing I want to mention here that I kept the constraints and decision variables of the previous LP as it was and added the new decision variables and constraints for this extension.)
+I added two new constraints for this extension:\\
+- Number of classes taken in a specific day of a week is less than or equals to 5.\\
 - Total number of days in a week is 3.\\
 
-For example I stored number of classes in each day of a week in a colum. Each row of that column actullay represents the sum of classes of that specific day. If any class is taken in a specific day of a week then the corresponding row of figure abc  will become 1 and the corresponding row in figure bcd must be less than or equals to 5. Finally total number of days in a week must be equal to 3. 
+For example I stored number of classes in each day of a week in a column. Each row of that column actually represents the sum of classes of that specific day. If any class is taken in a specific day of a week then the corresponding cell will become 1 and the corresponding row in constraint table must be less than or equals to (0/1)*5.  Finally total number of days in a week must be equal to 3. 
 
-After adding the new dicision variables and constraints my set of previous decision variables is changed and it looks like as follows.
-\\\\\\\\
-The added decision variables is stated bellow.  
-\\\\\\\\\
-New Constraints
-\\\\\\\
+After adding the new decision variables and constraints my set of previous decision variables is changed and it looks like as follows.
+\begin{figure}[H]
+  
+  \centering
+     \frame{\includegraphics[width=1.0\textwidth]{ext1}}
+    \caption{Resulting decision variable, Coefficients and Optimal Objective function for Extension}
+\end{figure}
+\newline
+New decision variables and constraints added for the extension are as follows:
+
+\begin{figure}[H]
+  
+  \centering
+     \frame{\includegraphics[width=0.6\textwidth, height=0.4\textheight]{ext2}}
+    \caption{New decision variables and Constraints for Extension}
+\end{figure}
+Here the row for Has class/not is for new decision variables that I added with the previous one. Each row of constraint part of Figure 5 is new constraint as well as the total no. of class day in week.\\
 Finally I get new maximum rating after imposing three days a week restriction, which is 19.3. It is lower than 19.5 but not that much lower.   
 
 
+\newpage
+\Large \textbf{Appendix:}\\
+\newline
+ \normalsize \textbf{Octave code for greedy heuristic:}
 
 
 %----------------------------------------------------------------------------------------
