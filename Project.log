@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.2)  5 DEC 2015 20:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.2)  9 DEC 2015 23:30
 entering extended mode
 **Project.tex
 ("E:\My folder\Study\MSc\Fall 2015\CPSC5110\CPSC5110-Project\Project.tex"
@@ -297,6 +297,31 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ))
 \@float@every@figure=\toks31
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count106
+\lst@gtempboxa=\box34
+\lst@token=\toks32
+\lst@length=\count107
+\lst@currlwidth=\dimen126
+\lst@column=\count108
+\lst@pos=\count109
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count110
+\lst@lineno=\count111
+\lst@maxwidth=\dimen129
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count112
+\lst@skipnumbers=\count113
+\lst@framebox=\box35
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
@@ -309,43 +334,44 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \f@ncyO@orf=\skip62
 )
 ("E:\My folder\Study\MSc\Fall 2015\CPSC5110\CPSC5110-Project\Project.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen126
-\scratchbox=\box34
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen127
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count114
+\scratchdimen=\dimen130
+\scratchbox=\box36
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen131
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks34
 )
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 81.
+\c@lstlisting=\count120
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 86.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -358,59 +384,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 134--143
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--143
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
 
  []
 
-[2] <heuristic.jpeg, id=15, 496.85625pt x 100.87688pt>
+[2] <heuristic.jpeg, id=14, 496.85625pt x 100.87688pt>
 File: heuristic.jpeg Graphic file (type jpg)
  <use heuristic.jpeg>
-Package pdftex.def Info: heuristic.jpeg used on input line 156.
+Package pdftex.def Info: heuristic.jpeg used on input line 152.
 (pdftex.def)             Requested size: 344.00653pt x 69.84523pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--166
+Underfull \hbox (badness 10000) in paragraph at lines 157--162
 
  []
 
 [3 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/heuristic.jpeg>]
-<decision.jpg, id=23, 915.42pt x 246.9225pt>
+<decision.jpg, id=22, 915.42pt x 246.9225pt>
 File: decision.jpg Graphic file (type jpg)
  <use decision.jpg>
-Package pdftex.def Info: decision.jpg used on input line 213.
+Package pdftex.def Info: decision.jpg used on input line 209.
 (pdftex.def)             Requested size: 430.01001pt x 170.58014pt.
 
-<constraints.jpg, id=24, 585.68813pt x 515.67656pt>
+<constraints.jpg, id=23, 585.68813pt x 515.67656pt>
 File: constraints.jpg Graphic file (type jpg)
  <use constraints.jpg>
-Package pdftex.def Info: constraints.jpg used on input line 220.
+Package pdftex.def Info: constraints.jpg used on input line 216.
 (pdftex.def)             Requested size: 344.01585pt x 284.30754pt.
 
 [4 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/decision.jpg>]
-<shadow.jpg, id=28, 355.3275pt x 440.39531pt>
+<shadow.jpg, id=27, 355.3275pt x 440.39531pt>
 File: shadow.jpg Graphic file (type jpg)
  <use shadow.jpg>
-Package pdftex.def Info: shadow.jpg used on input line 229.
+Package pdftex.def Info: shadow.jpg used on input line 225.
 (pdftex.def)             Requested size: 258.01517pt x 193.31758pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 [5 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/constraints.jpg>
  <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/shadow.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 241--246
+Underfull \hbox (badness 10000) in paragraph at lines 237--242
 
  []
 
-<ext1.jpg, id=32, 845.40843pt x 234.1247pt>
+<ext1.jpg, id=31, 845.40843pt x 234.1247pt>
 File: ext1.jpg Graphic file (type jpg)
  <use ext1.jpg>
-Package pdftex.def Info: ext1.jpg used on input line 253.
+Package pdftex.def Info: ext1.jpg used on input line 249.
 (pdftex.def)             Requested size: 430.00653pt x 119.08406pt.
 
 
@@ -420,47 +446,52 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.256 \newline
+l.252 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[6] <ext2.jpg, id=36, 354.57469pt x 301.125pt>
+[6] <ext2.jpg, id=35, 354.57469pt x 301.125pt>
 File: ext2.jpg Graphic file (type jpg)
  <use ext2.jpg>
-Package pdftex.def Info: ext2.jpg used on input line 262.
+Package pdftex.def Info: ext2.jpg used on input line 258.
 (pdftex.def)             Requested size: 258.00958pt x 227.44676pt.
  [7 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/ext1.jpg> <E:/M
 y folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/ext2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 270--273
+Underfull \hbox (badness 10000) in paragraph at lines 266--269
 
  []
 
-[8] ("E:\My folder\Study\MSc\Fall 2015\CPSC5110\CPSC5110-Project\Project.aux") 
-) 
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 270.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [8] [9]
+("E:\My folder\Study\MSc\Fall 2015\CPSC5110\CPSC5110-Project\Project.aux") ) 
 Here is how much of TeX's memory you used:
- 4829 strings out of 494045
- 68096 string characters out of 3148384
- 163650 words of memory out of 3000000
- 8028 multiletter control sequences out of 15000+200000
- 18520 words of font info for 53 fonts, out of 3000000 for 9000
+ 6047 strings out of 494045
+ 86430 string characters out of 3148384
+ 273359 words of memory out of 3000000
+ 9230 multiletter control sequences out of 15000+200000
+ 18830 words of font info for 54 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,13n,47p,951b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfc
-c1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on Project.pdf (8 pages, 558792 bytes).
+ 35i,13n,47p,959b,1553s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:
+/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc109
+5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on Project.pdf (9 pages, 595400 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
