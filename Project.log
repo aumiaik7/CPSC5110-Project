@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.2)  9 DEC 2015 23:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.2)  10 DEC 2015 22:57
 entering extended mode
 **Project.tex
 ("E:\My folder\Study\MSc\Fall 2015\CPSC5110\CPSC5110-Project\Project.tex"
@@ -404,39 +404,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--162
  []
 
 [3 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/heuristic.jpeg>]
-<decision.jpg, id=22, 915.42pt x 246.9225pt>
+<decision.jpg, id=23, 915.42pt x 246.9225pt>
 File: decision.jpg Graphic file (type jpg)
  <use decision.jpg>
-Package pdftex.def Info: decision.jpg used on input line 209.
+Package pdftex.def Info: decision.jpg used on input line 210.
 (pdftex.def)             Requested size: 430.01001pt x 170.58014pt.
 
-<constraints.jpg, id=23, 585.68813pt x 515.67656pt>
+<constraints.jpg, id=24, 585.68813pt x 515.67656pt>
 File: constraints.jpg Graphic file (type jpg)
  <use constraints.jpg>
-Package pdftex.def Info: constraints.jpg used on input line 216.
+Package pdftex.def Info: constraints.jpg used on input line 217.
 (pdftex.def)             Requested size: 344.01585pt x 284.30754pt.
 
 [4 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/decision.jpg>]
-<shadow.jpg, id=27, 355.3275pt x 440.39531pt>
+<shadow.jpg, id=28, 355.3275pt x 440.39531pt>
 File: shadow.jpg Graphic file (type jpg)
  <use shadow.jpg>
-Package pdftex.def Info: shadow.jpg used on input line 225.
+Package pdftex.def Info: shadow.jpg used on input line 226.
 (pdftex.def)             Requested size: 258.01517pt x 193.31758pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 [5 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/constraints.jpg>
  <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/shadow.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 237--242
+Underfull \hbox (badness 10000) in paragraph at lines 238--243
 
  []
 
-<ext1.jpg, id=31, 845.40843pt x 234.1247pt>
+<ext1.jpg, id=32, 845.40843pt x 234.1247pt>
 File: ext1.jpg Graphic file (type jpg)
  <use ext1.jpg>
-Package pdftex.def Info: ext1.jpg used on input line 249.
+Package pdftex.def Info: ext1.jpg used on input line 250.
 (pdftex.def)             Requested size: 430.00653pt x 119.08406pt.
 
 
@@ -446,24 +446,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 \newline
+l.253 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[6] <ext2.jpg, id=35, 354.57469pt x 301.125pt>
+[6] <ext2.jpg, id=36, 354.57469pt x 301.125pt>
 File: ext2.jpg Graphic file (type jpg)
  <use ext2.jpg>
-Package pdftex.def Info: ext2.jpg used on input line 258.
+Package pdftex.def Info: ext2.jpg used on input line 259.
 (pdftex.def)             Requested size: 258.00958pt x 227.44676pt.
  [7 <E:/My folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/ext1.jpg> <E:/M
 y folder/Study/MSc/Fall 2015/CPSC5110/CPSC5110-Project/ext2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 266--269
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 270.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 271.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -472,26 +472,27 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 Here is how much of TeX's memory you used:
  6047 strings out of 494045
  86430 string characters out of 3148384
- 273359 words of memory out of 3000000
+ 316359 words of memory out of 3000000
  9230 multiletter control sequences out of 15000+200000
  18830 words of font info for 54 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,13n,47p,959b,1553s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,13n,47p,938b,1553s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:
 /Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
-r/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc109
-5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on Project.pdf (9 pages, 595400 bytes).
+c/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super
+/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1095.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/cm-super/sftt0900.pfb>
+Output written on Project.pdf (9 pages, 605385 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
